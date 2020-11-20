@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-color: black;
+            color:white;
+            text-align: center;
+        }   
+        .helloWorld{
+            font-family: 'Caveat', cursive;
+            font-size: 10em;
+
+        }
+        footer{
+            font-size:1.3em;
+            font-weight: bolder;
+            margin-top: 100px;
+            width:100%;
+            height: 40px;
+            line-height: 40px;
+            letter-spacing: 5px;
+        }
+    </style>
+</head>
+<body>
+    <main  class="helloWorld" id="helloWorld">eryisan</main>
+    <footer>更新时间:2020年11月21日</footer>
+    <script>
+        const body = document.querySelector('body');
+        let status;
+        body.addEventListener('click',() => {
+            if(status){
+                body.style.backgroundColor = 'White';
+                body.style.color = 'black';
+                status = false;
+            }else{
+                body.style.backgroundColor = 'black';
+                body.style.color = 'white';
+                status = true;
+            }  
+        })
+    </script>
+</body>
+</html>
